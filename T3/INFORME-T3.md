@@ -94,21 +94,3 @@ compile-and-run.bat
 ```
 
 La ejecucion compila con Java 8 y realiza una validacion de aplicacion y las pruebas definidas en el proyecto.
-
-## Flujo de trabajo con Git
-
-Se recomienda el siguiente flujo para entregar:
-
-- main: codigo estable.
-- feature/refactor-reservas: cambios de refactorizacion.
-- Commits atomicos y descriptivos.
-- Pull request con resumen, evidencia de pruebas y checklist.
-
-Mensajes sugeridos:
-
-```text
-feat: crear modelo de habitaciones y reservas
-refactor: separar puertos y servicios SOLID
-test: agregar pruebas de reservas y pagos
-docs: documentar principios y funcionalidad
-```
