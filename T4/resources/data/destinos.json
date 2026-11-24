@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "nombre": "Suchitoto",
+        "departamento": "Cuscatlán",
+        "categoria": "Pueblo Mágico",
+        "precio": "$85 por persona",
+        "descripcion": "Un pueblito colonial lleno de historia, con calles empedradas, iglesias antiguas y vistas hermosas del lago Suchitlán. Ideal para los amantes de la cultura y la historia salvadoreña.",
+        "caracteristicas": [
+            "Iglesia Santa Lucia del siglo XVII",
+            "Vistas panorámicas del Lago Suchitlán",
+            "Galerías de arte y tiendas artesanales",
+            "Restaurantes con comida típica",
+            "Centro histórico bien preservado"
+        ],
+        "mejores_meses": "Noviembre a Marzo"
+    },
+    {
+        "id": 2,
+        "nombre": "Playa El Tunco",
+        "departamento": "La Libertad",
+        "categoria": "Playa",
+        "precio": "$45 por persona",
+        "descripcion": "Una de las playas más populares de El Salvador, perfecta para surfistas y amantes del sol. Con una vibra cosmopolita, bares, restaurantes y hospedaje para todos los presupuestos.",
+        "caracteristicas": [
+            "Excelentes olas para surfing",
+            "Vida nocturna activa",
+            "Estacionamiento seguro",
+            "Escuelas de surf",
+            "Variedad de restaurantes y bares"
+        ],
+        "mejores_meses": "Abril a Octubre"
+    },
+    {
+        "id": 3,
+        "nombre": "Volcán de Santa Ana",
+        "departamento": "Santa Ana",
+        "categoria": "Naturaleza",
+        "precio": "$60 por persona",
+        "descripcion": "El volcán más alto de El Salvador con una caminata desafiante pero gratificante. La vista de la laguna ácida en el cráter y las vistas panorámicas hacen que valga cada paso.",
+        "caracteristicas": [
+            "Altura: 2,365 metros",
+            "Laguna ácida en el cráter",
+            "Vistas de Guatemala y Honduras",
+            "Flora y fauna única",
+            "Senderos bien marcados"
+        ],
+        "mejores_meses": "Diciembre a Febrero"
+    },
+    {
+        "id": 4,
+        "nombre": "Parque Nacional Montecristo",
+        "departamento": "Santa Ana",
+        "categoria": "Reserva Natural",
+        "precio": "$50 por persona",
+        "descripcion": "Un bosque nuboso único en Centroamérica, compartido entre El Salvador, Honduras y Guatemala. Perfecto para el ecoturismo y la observación de aves.",
+        "caracteristicas": [
+            "Bosque nuboso prístino",
+            "Tres fronteras internacionales",
+            "Más de 100 especies de aves",
+            "Senderos naturales",
+            "Centro de visitantes"
+        ],
+        "mejores_meses": "Junio a Octubre"
+    },
+    {
+        "id": 5,
+        "nombre": "Playa El Espino",
+        "departamento": "San Vicente",
+        "categoria": "Playa",
+        "precio": "$40 por persona",
+        "descripcion": "Una playa tranquila y menos concurrida, ideal para familias. Con arena negra volcánica y aguas cálidas durante todo el año.",
+        "caracteristicas": [
+            "Playas limpias y seguras",
+            "Comida fresca de mariscos",
+            "Ambiente familiar",
+            "Poca afluencia de turistas",
+            "Acceso fácil desde la carretera"
+        ],
+        "mejores_meses": "Todo el año"
+    },
+    {
+        "id": 6,
+        "nombre": "Joya de Cerén",
+        "departamento": "La Libertad",
+        "categoria": "Sitio Arqueológico",
+        "precio": "$15 por persona",
+        "descripcion": "Sitio Patrimonio de la Humanidad, una aldea maya sepultada por una erupción volcánica. Explora estructuras, cerámica y la vida prehispánica salvadoreña.",
+        "caracteristicas": [
+            "Patrimonio UNESCO",
+            "Restos de viviendas mayas",
+            "Cerámica y artefactos antiguos",
+            "Museo en el sitio",
+            "Guías turísticos profesionales"
+        ],
+        "mejores_meses": "Noviembre a Marzo"
+    }
+]

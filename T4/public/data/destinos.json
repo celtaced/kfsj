@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "nombre": "Monumento Nacional El Rosario",
+    "departamento": "San Salvador",
+    "categoria": "Monumento Histórico",
+    "descripcion": "Centro comercial y cultural ubicado en el corazón de San Salvador, con arquitectura moderna y tiendas de lujo.",
+    "precio": "$25.00",
+    "imagen": "rosario.jpg",
+    "horario": "9:00 AM - 9:00 PM",
+    "telefono": "+503 2211-5000",
+    "email": "info@rosario.com.sv"
+  },
+  {
+    "id": 2,
+    "nombre": "Volcán de Izalco",
+    "departamento": "Sonsonate",
+    "categoria": "Volcán",
+    "descripcion": "Volcán activo más joven de América Central, con vistas espectaculares del océano Pacífico y una experiencia de senderismo única.",
+    "precio": "$40.00",
+    "imagen": "izalco.jpg",
+    "horario": "6:00 AM - 4:00 PM",
+    "telefono": "+503 2451-2835",
+    "email": "info@izalco.com.sv"
+  },
+  {
+    "id": 3,
+    "nombre": "Playa El Tunco",
+    "departamento": "La Libertad",
+    "categoria": "Playa",
+    "descripcion": "Famosa playa de surf con aguas cristalinas, restaurantes frente al mar y ambiente bohemio perfecto para relajarse.",
+    "precio": "Entrada Gratuita",
+    "imagen": "tunco.jpg",
+    "horario": "6:00 AM - 6:00 PM",
+    "telefono": "+503 2335-3400",
+    "email": "info@eltunco.com.sv"
+  },
+  {
+    "id": 4,
+    "nombre": "Lago de Coatepeque",
+    "departamento": "Santa Ana",
+    "categoria": "Lago",
+    "descripcion": "Lago volcánico rodeado de lush vegetation y villas privadas, ideal para natación, pesca y picnic en familia.",
+    "precio": "$15.00",
+    "imagen": "coatepeque.jpg",
+    "horario": "8:00 AM - 5:00 PM",
+    "telefono": "+503 2440-5555",
+    "email": "info@coatepeque.com.sv"
+  },
+  {
+    "id": 5,
+    "nombre": "Ruta de las Flores",
+    "departamento": "Ahuachapán",
+    "categoria": "Ruta Turística",
+    "descripcion": "Pintoresco recorrido a través de pueblos coloniales con cafeterías, tiendas de artesanía y vistas de las montañas.",
+    "precio": "Entrada Gratuita",
+    "imagen": "flores.jpg",
+    "horario": "7:00 AM - 5:00 PM",
+    "telefono": "+503 2413-2835",
+    "email": "info@rutaflores.com.sv"
+  },
+  {
+    "id": 6,
+    "nombre": "Joya de Cerén",
+    "departamento": "La Libertad",
+    "categoria": "Sitio Arqueológico",
+    "descripcion": "Patrimonio de la Humanidad, la Pompeya de América del Sur con restos de viviendas prehispánicas conservadas.",
+    "precio": "$5.00",
+    "imagen": "ceren.jpg",
+    "horario": "9:00 AM - 4:00 PM",
+    "telefono": "+503 2301-7103",
+    "email": "info@joyaceren.com.sv"
+  }
+]
