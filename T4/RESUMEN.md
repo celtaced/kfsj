@@ -1,5 +1,7 @@
 # 📋 Resumen de la Tarea 4: Implementación del Patrón MVC en Laravel
 
+- **Repositorio de GitHub:** https://github.com/celtaced/kfsj/tree/main/T4
+
 ## ✅ Entregables Completados
 
 ### 1. **Aplicación Laravel MVC**
