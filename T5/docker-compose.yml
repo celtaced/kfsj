@@ -1,0 +1,30 @@
+services:
+  app:
+    build: .
+    environment:
+      COMPOSER_PROCESS_TIMEOUT: 1800
+    ports:
+      - "127.0.0.1:8002:8000"
+    volumes:
+      - .:/app
+      - t5_vendor:/app/vendor
+    depends_on:
+      db:
+        condition: service_healthy
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: ecommerce
+      MYSQL_USER: ecommerce
+      MYSQL_PASSWORD: local_ecommerce
+      MYSQL_ROOT_PASSWORD: local_root_password
+    volumes:
+      - t5_mysql:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+volumes:
+  t5_mysql:
+  t5_vendor:
