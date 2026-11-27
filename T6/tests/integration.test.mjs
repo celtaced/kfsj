@@ -34,11 +34,11 @@ async function assertNotFound(path) {
 }
 
 // React's progressive-enhancement form includes the bound Server Action metadata.
-async function submit(path, fields) {
+async function submit(path, fields, actionMarker = "$ACTION_REF_") {
   const page = await request(path);
   assert.equal(page.status, 200, `No se pudo abrir ${path}`);
   const html = await page.text();
-  const form = html.match(/<form\b[^>]*>[\s\S]*?<\/form>/g)?.find((item) => item.includes('$ACTION_REF_'));
+  const form = html.match(/<form\b[^>]*>[\s\S]*?<\/form>/g)?.find((item) => item.includes(actionMarker));
   assert.ok(form, `No se encontro el formulario editorial en ${path}`);
   const body = new FormData();
   for (const input of form.match(/<input\b[^>]*type="hidden"[^>]*>/g) || []) {
@@ -177,6 +177,7 @@ test("Supabase real, RLS y formularios editoriales", { timeout: 120000 }, async 
     const categoryCleanup = await editor.from("categories").delete().eq("slug", categorySlug);
     assert.equal(postCleanup.error, null, "No se pudo limpiar el articulo temporal");
     assert.equal(categoryCleanup.error, null, "No se pudo limpiar la categoria temporal");
+    if (cookies.size) await submit("/admin", {}, "$ACTION_ID_");
     const logout = await editor.auth.signOut();
     assert.equal(logout.error, null);
   }

@@ -6,12 +6,13 @@ eliminar artículos y categorías.
 
 ## Enlaces de entrega
 
-- Repositorio previsto: https://github.com/celtaced/kfsj/tree/main/T6
+- Repositorio público: https://github.com/celtaced/kfsj/tree/main/T6
+- Sitio en producción: https://bitacora-t6.vercel.app
 - Sitio local: http://localhost:3006
-- **Producción: pendiente de desplegar en Vercel y agregar aquí la URL real.**
 
-La aplicación local y su build de producción fueron comprobados con Supabase
-real. Un build exitoso no sustituye el despliegue exigido por la rúbrica.
+La aplicación local, el build de producción Docker y el sitio público de Vercel
+fueron comprobados con Supabase real, incluyendo login, formularios editoriales,
+publicación, RLS y eliminación. El diseño se revisó en escritorio y móvil.
 
 ## Tecnologías
 
@@ -207,8 +208,8 @@ Estas comprobaciones HTTP no son una grabación E2E de navegador.
 7. Configura `NEXT_PUBLIC_SITE_URL` con la URL HTTPS asignada y vuelve a desplegar.
 8. Actualiza Site URL y Redirect URLs en Supabase Auth.
 9. Comprueba landing, un artículo, una categoría, búsqueda y login editorial.
-10. Sustituye la nota pendiente de producción de este README por la URL real
-    y entrega **ambos enlaces**, Vercel y GitHub.
+10. Mantén actualizados los enlaces de este README y entrega **ambos enlaces**,
+    Vercel y GitHub.
 
 No se requiere un token de Vercel dentro del proyecto. La importación se hace
 con la cuenta personal ya vinculada con GitHub.
@@ -221,4 +222,4 @@ con la cuenta personal ya vinculada con GitHub.
 | Rutas dinámicas | Artículos y categorías, SSG, params y búsqueda con searchParams. |
 | Supabase | Tres tablas, relación FK, seis semillas, RLS y CRUD editorial. |
 | Diseño y UX | Landing editorial responsive, estados y accesibilidad. |
-| Despliegue y entregables | Docker y build comprobados; instrucciones de Vercel; pendiente URL pública verificada. |
+| Despliegue y entregables | Vercel público, repo GitHub, Docker, README y pruebas sobre la URL real. |
