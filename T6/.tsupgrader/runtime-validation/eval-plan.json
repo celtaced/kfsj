@@ -1,0 +1,43 @@
+{
+  "generatedOnPlatform": "win32",
+  "projectType": "webapp",
+  "assertions": [
+    {
+      "name": "next-production-build",
+      "kind": "process",
+      "command": "docker",
+      "args": ["compose", "run", "--rm", "--no-deps", "--volume", "t6_build:/app/.next", "web", "npm", "run", "build"],
+      "verificationMethod": "exit-code",
+      "expected": "0",
+      "timeoutSeconds": 300
+    },
+    {
+      "name": "eslint-clean",
+      "kind": "process",
+      "command": "docker",
+      "args": ["compose", "run", "--rm", "--no-deps", "web", "npm", "run", "lint"],
+      "verificationMethod": "exit-code",
+      "expected": "0",
+      "timeoutSeconds": 120
+    },
+    {
+      "name": "tests-pass",
+      "kind": "process",
+      "command": "docker",
+      "args": ["compose", "run", "--rm", "--no-deps", "web", "npm", "test"],
+      "verificationMethod": "test-results",
+      "expected": "0",
+      "timeoutSeconds": 120
+    },
+    {
+      "name": "production-home",
+      "kind": "http-probe",
+      "startCommand": "docker",
+      "startArgs": ["compose", "run", "--rm", "--no-deps", "--name", "t6-runtime-validation", "--publish", "127.0.0.1:3007:3000", "--volume", "t6_build:/app/.next", "web", "npm", "run", "start", "--", "--hostname", "0.0.0.0"],
+      "url": "http://localhost:3007",
+      "verificationMethod": "output-contains",
+      "expected": "Tecnología",
+      "timeoutSeconds": 90
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+services:
+  web:
+    build: .
+    ports:
+      - "127.0.0.1:3006:3000"
+    volumes:
+      - .:/app
+      - t6_modules:/app/node_modules
+      - t6_next:/app/.next
+    environment:
+      NEXT_TELEMETRY_DISABLED: "1"
+volumes:
+  t6_modules:
+  t6_next:
